@@ -350,3 +350,5 @@ MIT License - See LICENSE file for details
 **Last Updated**: October 20, 2024
 
 _Built with ❤️ for the future of AI-powered conversations_
+
+please leave a like or follow if you like of find this useful
