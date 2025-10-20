@@ -300,7 +300,7 @@ export default function ChatInterface() {
         </div>
 
         <div>
-          Using OpenRouter API • Model: meta-llama/llama-3.2-3b-instruct:free
+          Powered by AI Assistant
         </div>
       </div>
     </div>

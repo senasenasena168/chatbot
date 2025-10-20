@@ -21,7 +21,7 @@ This chatbot project represents a complete AI conversation system designed for s
 
 #### 🤖 **Core Chatbot Functionality**
 
-- **Real-time AI Responses** - Powered by OpenRouter API with Llama 3.2 model
+- **Real-time AI Responses** - Powered by OpenRouter API with Deepseek models
 - **Interactive Chat Interface** - Clean, responsive design with message history
 - **Auto-scroll Management** - Smart scrolling with user control options
 - **Dark/Light Mode** - Complete theme system with user preferences
@@ -52,7 +52,7 @@ This chatbot project represents a complete AI conversation system designed for s
 
 ### Backend & APIs
 
-- **OpenRouter API** - Primary AI model provider (Llama 3.2)
+- **OpenRouter API** - Primary AI model provider (Deepseek models)
 - **Supabase** - PostgreSQL database with real-time features
 - **Next.js API Routes** - Serverless API endpoints
 
@@ -75,7 +75,7 @@ This chatbot project represents a complete AI conversation system designed for s
 
 **OpenRouter API** - Provides access to multiple AI models including:
 
-- **Llama 3.2 3B Instruct** - Fast, efficient responses (Free tier)
+- **Deepseek Chat** - Fast, efficient responses (Free tier)
 - **Fallback Support** - Multiple model options for reliability
 - **Rate Limiting** - Built-in request management
 

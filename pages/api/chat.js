@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     }
 
     const completion = await openrouter.chat.completions.create({
-      model: 'meta-llama/llama-3.2-3b-instruct:free',
+      model: 'deepseek/deepseek-chat:free',
       messages: messages,
       max_tokens: 500,
       temperature: 0.7,

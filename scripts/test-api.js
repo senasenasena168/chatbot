@@ -29,7 +29,7 @@ async function testOpenRouterAPI() {
         content: 'Hello! Please respond with just "API test successful" to confirm you are working.'
       }
     ],
-    model: 'meta-llama/llama-3.2-3b-instruct:free',
+    model: 'deepseek/deepseek-chat:free',
     max_tokens: 50,
     temperature: 0.1
   });
