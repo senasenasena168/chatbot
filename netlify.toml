@@ -12,10 +12,6 @@
   # API routes will be deployed as serverless functions
   directory = "netlify/functions"
 
-[build.environment]
-  # Node.js version for builds
-  NODE_VERSION = "18"
-
 [[redirects]]
   # Handle client-side routing for Next.js
   from = "/*"
