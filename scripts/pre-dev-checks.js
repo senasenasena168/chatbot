@@ -85,7 +85,7 @@ function checkEnvironmentFile() {
   // Check for required API keys
   try {
     const envContent = fs.readFileSync(envPath, 'utf8');
-    const requiredKeys = ['GROK_API_KEY', 'OPENROUTER_API_KEY', 'DEEPSEEK_API_KEY'];
+    const requiredKeys = ['OPENROUTER_API_KEY'];
 
     const missingKeys = requiredKeys.filter(key => {
       const regex = new RegExp(`^${key}=(.*)$`, 'm');

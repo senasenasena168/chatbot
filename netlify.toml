@@ -1,0 +1,43 @@
+[build]
+  # Build configuration for Next.js
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Handle React 19 compatibility issues
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[functions]
+  # API routes will be deployed as serverless functions
+  directory = "netlify/functions"
+
+[build.environment]
+  # Node.js version for builds
+  NODE_VERSION = "18"
+
+[[redirects]]
+  # Handle client-side routing for Next.js
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Security headers
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  # API CORS headers
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+
+# Environment variables (set these in Netlify dashboard)
+# OPENROUTER_API_KEY = "your_key_here"
+# NODE_ENV = "production"
