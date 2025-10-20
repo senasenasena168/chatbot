@@ -1,11 +1,12 @@
 [build]
   # Build configuration for Next.js
-  command = "npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
   publish = ".next"
 
 [build.environment]
   # Handle React 19 compatibility issues
   NPM_FLAGS = "--legacy-peer-deps"
+  NODE_VERSION = "18"
 
 [functions]
   # API routes will be deployed as serverless functions
